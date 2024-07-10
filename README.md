@@ -1,5 +1,4 @@
-
-<h1 align="center">Telegram Media Downloader</h1>
+# Telegram Media Downloader
 
 <p align="center">
 <a href="https://github.com/Dineshkarthik/telegram_media_downloader/actions"><img alt="Unittest" src="https://github.com/Dineshkarthik/telegram_media_downloader/workflows/Unittest/badge.svg"></a>
@@ -144,3 +143,24 @@ Want to file a bug, contribute some code, or improve documentation? Excellent! R
 
 ### Code of Conduct
 Help us keep Telegram Media Downloader open and inclusive. Please read and follow our [Code of Conduct](https://github.com/Dineshkarthik/telegram_media_downloader/blob/master/CODE_OF_CONDUCT.md).
+
+
+## Forked Changes by PanXXHH
+
+This fork includes the following changes and improvements:
+
+### Enhancements:
+- [Enhancement 1]: Description of the enhancement.
+- [Enhancement 2]: Description of the enhancement.
+
+### Bug Fixes:
+- [Bug Fix 1]: Description of the bug fix.
+- [Bug Fix 2]: Description of the bug fix.
+
+### New Features:
+- [Feature 1]: Description of the new feature.
+- [Feature 2]: Description of the new feature.
+
+### Other Changes:
+- [Change 1]: Description of other changes.
+- [Change 2]: Description of other changes.
