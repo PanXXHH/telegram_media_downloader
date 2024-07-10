@@ -1,4 +1,4 @@
-# Telegram Media Downloader
+# Telegram 媒体下载器
 
 <p align="center">
 <a href="https://github.com/Dineshkarthik/telegram_media_downloader/actions"><img alt="Unittest" src="https://github.com/Dineshkarthik/telegram_media_downloader/workflows/Unittest/badge.svg"></a>
@@ -6,6 +6,10 @@
 <a href="https://github.com/Dineshkarthik/telegram_media_downloader/blob/master/LICENSE"><img alt="License: MIT" src="https://black.readthedocs.io/en/stable/_static/license.svg"></a>
 <a href="https://github.com/python/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
 </p>
+
+## 项目介绍
+
+这是一个从 [Dineshkarthik 的 Telegram Media Downloader 项目](https://github.com/Dineshkarthik/telegram_media_downloader) fork 的项目。非常感谢原作者的出色工作！
 
 <h3 align="center">
   <a href="https://github.com/Dineshkarthik/telegram_media_downloader/discussions/categories/ideas">功能请求</a>
