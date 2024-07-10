@@ -1,6 +1,3 @@
-好的，以下是修改后的README文档示例，包含分叉项目的说明和更改，并对文案进行了适当调整以更符合中国用户的阅读习惯：
-
-```markdown
 # Telegram 媒体下载器
 
 <p align="center">
@@ -175,6 +172,3 @@ proxy:
 ### 行为准则
 
 帮助我们保持 Telegram 媒体下载器开放和包容。请阅读并遵循我们的 [行为准则](https://github.com/Dineshkarthik/telegram_media_downloader/blob/master/CODE_OF_CONDUCT.md)。
-```
-
-将上述内容保存到您的`README.md`文件中并提交更改。这样，您的项目将以中文文档的形式展示，并且在前面明确告知用户这是一个从原项目fork的项目，包含了您对项目所做的具体更改。
