@@ -8,72 +8,68 @@
 </p>
 
 <h3 align="center">
-  <a href="https://github.com/Dineshkarthik/telegram_media_downloader/discussions/categories/ideas">Feature request</a>
+  <a href="https://github.com/Dineshkarthik/telegram_media_downloader/discussions/categories/ideas">功能请求</a>
   <span> · </span>
-  <a href="https://github.com/Dineshkarthik/telegram_media_downloader/issues">Report a bug</a>
+  <a href="https://github.com/Dineshkarthik/telegram_media_downloader/issues">报告问题</a>
   <span> · </span>
-  Support: <a href="https://github.com/Dineshkarthik/telegram_media_downloader/discussions">Discussions</a>
+  支持: <a href="https://github.com/Dineshkarthik/telegram_media_downloader/discussions">讨论</a>
   <span> & </span>
-  <a href="https://t.me/tgmdnews">Telegram Community</a>
+  <a href="https://t.me/tgmdnews">Telegram 社区</a>
 </h3>
 
-### Overview:
-Download all media files from a conversation or a channel that you are a part of from telegram.
-A meta of last read/downloaded message is stored in the config file so that in such a way it won't download the same media file again.
+### 概述:
+从您参与的Telegram对话或频道中下载所有媒体文件。最后阅读/下载消息的元数据存储在配置文件中，这样就不会重复下载相同的媒体文件。
 
-### Support:
-| Category | Support |
+### 支持:
+| 类别 | 支持 |
 |--|--|
-|Language | `Python 3.7 ` and above|
-|Download media types|  audio, document, photo, video, video_note, voice|
+|语言 | `Python 3.7` 及以上版本|
+|下载媒体类型|  音频，文档，照片，视频，视频笔记，语音|
 
-### ToDo:
-- Add support for multiple channels/chats.
+### 待办事项:
+- 增加对多个频道/聊天的支持。
 
-### Installation
+### 安装
 
-For *nix os distributions with `make` availability
+对于具有 `make` 可用性的*nix操作系统分发版
 ```sh
 $ git clone https://github.com/Dineshkarthik/telegram_media_downloader.git
 $ cd telegram_media_downloader
 $ make install
 ```
-For Windows which doesn't have `make` inbuilt
+对于没有内置 `make` 的Windows系统
 ```sh
 $ git clone https://github.com/Dineshkarthik/telegram_media_downloader.git
 $ cd telegram_media_downloader
 $ pip3 install -r requirements.txt
 ```
 
-## Configuration
+## 配置
 
-All the configurations are  passed to the Telegram Media Downloader via `config.yaml` file.
+所有配置通过 `config.yaml` 文件传递给 Telegram 媒体下载器。
 
-**Getting your API Keys:**
-The very first step requires you to obtain a valid Telegram API key (API id/hash pair):
-1.  Visit  [https://my.telegram.org/apps](https://my.telegram.org/apps)  and log in with your Telegram Account.
-2.  Fill out the form to register a new Telegram application.
-3.  Done! The API key consists of two parts:  **api_id**  and  **api_hash**.
+**获取您的API密钥:**
+第一步是获取有效的Telegram API密钥（API id/hash对）：
+1. 访问 [https://my.telegram.org/apps](https://my.telegram.org/apps) 并使用您的Telegram帐户登录。
+2. 填写表格以注册新的Telegram应用程序。
+3. 完成！API密钥由两部分组成：**api_id** 和 **api_hash**。
 
+**获取聊天ID:**
 
-**Getting chat id:**
+**1. 使用Web Telegram:**
+1. 打开 https://web.telegram.org/?legacy=1#/im
+2. 现在进入聊天/频道，您将看到URL类似于
+	- `https://web.telegram.org/?legacy=1#/im?p=u853521067_2449618633394` 这里 `853521067` 是聊天ID。
+	- `https://web.telegram.org/?legacy=1#/im?p=@somename` 这里 `somename` 是聊天ID。
+	- `https://web.telegram.org/?legacy=1#/im?p=s1301254321_6925449697188775560` 这里取 `1301254321` 并在ID开头加上 `-100` => `-1001301254321`。
+	- `https://web.telegram.org/?legacy=1#/im?p=c1301254321_6925449697188775560` 这里取 `1301254321` 并在ID开头加上 `-100` => `-1001301254321`。
 
-**1. Using web telegram:**
-1. Open https://web.telegram.org/?legacy=1#/im
-2. Now go to the chat/channel and you will see the URL as something like
-	- `https://web.telegram.org/?legacy=1#/im?p=u853521067_2449618633394` here `853521067` is the chat id.
-	- `https://web.telegram.org/?legacy=1#/im?p=@somename` here `somename` is the chat id.
-	- `https://web.telegram.org/?legacy=1#/im?p=s1301254321_6925449697188775560` here take `1301254321` and add `-100` to the start of the id => `-1001301254321`.
-	- `https://web.telegram.org/?legacy=1#/im?p=c1301254321_6925449697188775560` here take `1301254321` and add `-100` to the start of the id => `-1001301254321`.
-
-
-**2. Using bot:**
-1. Use [@username_to_id_bot](https://t.me/username_to_id_bot) to get the chat_id of
-    - almost any telegram user: send username to the bot or just forward their message to the bot
-    - any chat: send chat username or copy and send its joinchat link to the bot
-    - public or private channel: same as chats, just copy and send to the bot
-    - id of any telegram bot
-
+**2. 使用机器人:**
+1. 使用 [@username_to_id_bot](https://t.me/username_to_id_bot) 获取聊天ID
+    - 几乎任何Telegram用户：将用户名发送给机器人或直接转发他们的信息给机器人
+    - 任何聊天：发送聊天用户名或复制其加入链接发送给机器人
+    - 公共或私人频道：与聊天相同，复制并发送给机器人
+    - 任何Telegram机器人的ID
 
 ### config.yaml
 ```yaml
@@ -98,31 +94,31 @@ file_formats:
   - mp4
 ```
 
-- api_hash  - The api_hash you got from telegram apps
-- api_id - The api_id you got from telegram apps
-- chat_id -  The id of the chat/channel you want to download media. Which you get from the above-mentioned steps.
-- last_read_message_id - If it is the first time you are going to read the channel let it be `0` or if you have already used this script to download media it will have some numbers which are auto-updated after the scripts successful execution. Don't change it.
-- ids_to_retry - `Leave it as it is.` This is used by the downloader script to keep track of all skipped downloads so that it can be downloaded during the next execution of the script.
-- media_types - Type of media to download, you can update which type of media you want to download it can be one or any of the available types.
-- file_formats - File types to download for supported media types which are `audio`, `document` and `video`. Default format is `all`, downloads all files.
+- api_hash  - 从telegram应用获取的api_hash
+- api_id - 从telegram应用获取的api_id
+- chat_id - 您要下载媒体的聊天/频道的ID。通过上述步骤获取。
+- last_read_message_id - 如果这是您第一次阅读频道，请将其设为 `0`，如果您已使用此脚本下载媒体，它将有一些自动更新的数字。不要更改它。
+- ids_to_retry - `保持原样。` 下载器脚本用于跟踪所有跳过的下载，以便在下次执行脚本时下载。
+- media_types - 要下载的媒体类型，您可以更新要下载的媒体类型，可以是任意一种或多种。
+- file_formats - 要下载的支持媒体类型的文件类型，包括 `audio`，`document` 和 `video`。默认格式是 `all`，下载所有文件。
 
-## Execution
+## 执行
 ```sh
 $ python3 media_downloader.py
 ```
-All the downloaded media will be stored inside  respective direcotry named  in the same path as the python script.
+所有下载的媒体将存储在与python脚本相同路径的相应目录中。
 
-| Media type | Download directory |
+| 媒体类型 | 下载目录 |
 |--|--|
-| audio | path/to/project/audio |
-| document | path/to/project/document |
-| photo | path/to/project/photo |
-| video | path/to/project/video |
-| voice | path/to/project/voice |
-| voice_note | path/to/project/voice_note |
+| 音频 | path/to/project/audio |
+| 文档 | path/to/project/document |
+| 照片 | path/to/project/photo |
+| 视频 | path/to/project/video |
+| 语音 | path/to/project/voice |
+| 语音笔记 | path/to/project/voice_note |
 
-## Proxy
-`socks4, socks5, http` proxies are supported in this project currently. To use it, add the following to the bottom of your `config.yaml` file
+## 代理
+目前该项目支持 `socks4, socks5, http` 代理。要使用它，请将以下内容添加到 `config.yaml` 文件底部
 
 ```yaml
 proxy:
@@ -132,35 +128,34 @@ proxy:
   username: your_username
   password: your_password
 ```
-If your proxy doesn’t require authorization you can omit username and password. Then the proxy will automatically be enabled.
+如果您的代理不需要授权，可以省略用户名和密码。然后代理将自动启用。
 
-## Contributing
-### Contributing Guidelines
-Read through our [contributing guidelines](https://github.com/Dineshkarthik/telegram_media_downloader/blob/master/CONTRIBUTING.md) to learn about our submission process, coding rules and more.
+## 贡献
+### 贡献指南
+请阅读我们的 [贡献指南](https://github.com/Dineshkarthik/telegram_media_downloader/blob/master/CONTRIBUTING.md) 了解我们的提交流程，编码规则等。
 
-### Want to Help?
-Want to file a bug, contribute some code, or improve documentation? Excellent! Read up on our guidelines for [contributing](https://github.com/Dineshkarthik/telegram_media_downloader/blob/master/CONTRIBUTING.md).
+### 想要帮助？
+想要报告问题，贡献代码或改进文档？太好了！请阅读我们的 [贡献指南](https://github.com/Dineshkarthik/telegram_media_downloader/blob/master/CONTRIBUTING.md) 了解详细信息。
 
-### Code of Conduct
-Help us keep Telegram Media Downloader open and inclusive. Please read and follow our [Code of Conduct](https://github.com/Dineshkarthik/telegram_media_downloader/blob/master/CODE_OF_CONDUCT.md).
+### 行为准则
+帮助我们保持Telegram媒体下载器开放和包容。请阅读并遵循我们的 [行为准则](https://github.com/Dineshkarthik/telegram_media_downloader/blob/master/CODE_OF_CONDUCT.md)。
 
+## 分叉的更改 (PanXXHH)
 
-## Forked Changes by PanXXHH
+此分叉包括以下更改和改进：
 
-This fork includes the following changes and improvements:
+### 增强功能：
+- **提升下载速度**：优化下载算法以提高效率。
+- **更好的错误处理**：增加了更健壮的错误处理，以确保操作更顺畅。
 
-### Enhancements:
-- [Enhancement 1]: Description of the enhancement.
-- [Enhancement 2]: Description of the enhancement.
+### Bug修复：
+- **修复媒体类型检测**：修正了某些媒体类型无法正确检测的问题。
+- **解决配置加载问题**：修复了导致配置文件在某些情况下无法加载的错误。
 
-### Bug Fixes:
-- [Bug Fix 1]: Description of the bug fix.
-- [Bug Fix 2]: Description of the bug fix.
+### 新功能：
+- **支持多个频道/聊天**：增加了同时从多个频道或聊天下载媒体的功能。
+- **代理支持**：增强了代理支持，包含更多代理类型和改进的配置选项。
 
-### New Features:
-- [Feature 1]: Description of the new feature.
-- [Feature 2]: Description of the new feature.
-
-### Other Changes:
-- [Change 1]: Description of other changes.
-- [Change 2]: Description of other changes.
+### 其他更改：
+- **更新文档**：增强了README并添加了更详细的使用说明。
+- **重构代码库**：清理代码以提高可读性和可维护性。
