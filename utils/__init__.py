@@ -1,5 +1,10 @@
 """Init namespace"""
 
-__version__ = "2.0.2"
+__version__ = "1.0.0"
 __license__ = "MIT License"
-__copyright__ = "Copyright (C) 2019 Dineshkarthik <https://github.com/Dineshkarthik>"
+__author__ = "PanXXHH"
+__copyright__ = "Copyright (C) 2024 PanXXHH <https://github.com/PanXXHH>"
+__repository_url__ = "https://github.com/PanXXHH/telegram_media_downloader"
+__original_author__ = "Dineshkarthik <https://github.com/Dineshkarthik>"
+__original_version__ = "2.0.2"
+__original_repository_url__ = "https://github.com/Dineshkarthik/telegram_media_downloader"
